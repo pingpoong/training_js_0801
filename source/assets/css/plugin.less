@@ -1,0 +1,27 @@
+// Plugin
+.accordion {
+  h3{
+    border: #ccc solid 1px;
+    padding: 14px 10px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+
+    &:first-child{
+      margin-top: 0;
+    }
+    .icon-arrow{
+      float: right;
+      transition: transform 0.5s;
+    }
+    &.active{
+      .icon-arrow{
+        transform: rotate(135deg);
+      }
+    }
+  }
+  .content{
+    display: none;
+  }
+}
